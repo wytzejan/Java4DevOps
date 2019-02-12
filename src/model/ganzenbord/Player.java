@@ -6,6 +6,7 @@ public class Player {
     private boolean activePlayer;
     private boolean skipTurn;
     private int skipNumberOfTurns;
+    private boolean inPut;
     private boolean isWinner;
 
     public Player(String name) {
@@ -58,5 +59,13 @@ public class Player {
 
     public void setWinner(boolean winner) {
         isWinner = winner;
+    }
+
+    public boolean isInPut() {
+        return inPut;
+    }
+
+    public void setInPut(boolean inPut) {
+        this.inPut = inPut;
     }
 }
